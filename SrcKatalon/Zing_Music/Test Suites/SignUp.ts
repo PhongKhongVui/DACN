@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>SignUp</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>f2e2bd4f-5173-4c24-94fa-f3d350897bba</testSuiteGuid>
+   <testCaseLink>
+      <guid>007a34fe-b321-4d24-bc1d-5258031b05d0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DangKy</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>7945b551-0084-4ff2-a605-6a323f78b29f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/SignUp</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>7945b551-0084-4ff2-a605-6a323f78b29f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>0ee6a2de-357b-426f-9204-ec3525ecbace</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7945b551-0084-4ff2-a605-6a323f78b29f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tk</value>
+         <variableId>b6f09a88-ab0a-4079-8736-43b985dc48f1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7945b551-0084-4ff2-a605-6a323f78b29f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>mk</value>
+         <variableId>df8a738f-ddd6-4668-9e98-7a252c77a576</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7945b551-0084-4ff2-a605-6a323f78b29f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>re_mk</value>
+         <variableId>e247289f-73ed-4e65-ae7f-6c40831afb63</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7945b551-0084-4ff2-a605-6a323f78b29f</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Thông báo lỗi</value>
+         <variableId>f1840210-86c4-4e9e-b60a-19a4dd54b74a</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

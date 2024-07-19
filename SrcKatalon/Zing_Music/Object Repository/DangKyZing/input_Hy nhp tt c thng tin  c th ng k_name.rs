@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Hy nhp tt c thng tin  c th ng k_name</name>
+   <tag></tag>
+   <elementGuidId>3a794d47-1d62-45f9-94b6-379a0552b6e8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='name']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;name&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>3ed3450e-2071-4494-91c4-66d28330fed2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600</value>
+      <webElementGuid>95bd5a26-bd7a-4921-8c54-97a8b046cae4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>name</value>
+      <webElementGuid>66243b44-60eb-428d-9ae4-1b0b3d5df020</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Tên người dùng</value>
+      <webElementGuid>3c65a45b-f396-45de-b8ff-297b133f7f84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;modal&quot;]/div[1]/div[@class=&quot;auth-modal&quot;]/div[@class=&quot;rounded-l-2xl bg-[--layout-bg] p-10&quot;]/div[1]/form[1]/div[@class=&quot;mt-6 flex flex-col gap-5&quot;]/div[1]/input[@class=&quot;w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600&quot;]</value>
+      <webElementGuid>1534c44b-3f27-47bf-b2ea-32ad37a25142</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@name='name']</value>
+      <webElementGuid>11feef43-30a4-4052-80a0-cc55cf83cb2e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hãy nhập tất cả thông tin để có thể đăng ký'])[1]/following::input[1]</value>
+      <webElementGuid>303d65e1-21e7-48ea-bb70-849087e1e79a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[1]/following::input[1]</value>
+      <webElementGuid>bd140cc4-a2b5-4640-8ed9-435047b04573</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[2]/preceding::input[4]</value>
+      <webElementGuid>f85b77a6-a779-4f6b-b744-8b1aaf612fc9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ban đã có tài khoản?'])[1]/preceding::input[4]</value>
+      <webElementGuid>eda30d92-74c8-4999-965c-b452126f5c99</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div/form/div/div/input</value>
+      <webElementGuid>0ecaca11-82b1-49bc-a7e0-68e0354cb78a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@name = 'name' and @placeholder = 'Tên người dùng']</value>
+      <webElementGuid>be121c2d-1f4b-4826-8686-b923e80e69ed</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>img_To playlist mi_rounded-full</name>
+   <tag></tag>
+   <elementGuidId>62bc3455-1a65-45dd-916a-caed1c41ae2e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div[2]/button/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.rounded-full</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>71db9f84-1985-44f7-b992-e06483ebbbf5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.10.21/static/media/user-default.3ff115bb.png</value>
+      <webElementGuid>5ae95017-d0b6-4c95-9b64-6cf1bb0b89bd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>rounded-full</value>
+      <webElementGuid>2fcb122a-fb1d-48fb-aee4-499afc8d365f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;header&quot;]/div[@class=&quot;flex flex-row-reverse&quot;]/button[@class=&quot;w-[38px] h-[38px] rounded-full flex items-center justify-center bg-slate-300&quot;]/img[@class=&quot;rounded-full&quot;]</value>
+      <webElementGuid>3188a454-6e06-4f34-879c-af7628e189f9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div[2]/button/img</value>
+      <webElementGuid>f68d9958-e663-4ae4-a2a5-4413c56685a1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tạo playlist mới'])[1]/following::img[1]</value>
+      <webElementGuid>f03be39e-54fb-4123-b566-3221f3a52651</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='ĐĂNG NHẬP'])[1]/following::img[1]</value>
+      <webElementGuid>7d996d44-d933-4dbe-9590-6fb3d0d55d7c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nâng cấp tài khoản'])[1]/preceding::img[1]</value>
+      <webElementGuid>5879cd8f-3a79-4878-89be-90bc30f1cdcb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nghe gần đây'])[1]/preceding::img[6]</value>
+      <webElementGuid>ec37e7d6-bcb7-4a33-9921-945f6534cdc2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[contains(@src,'https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.10.21/static/media/user-default.3ff115bb.png')]</value>
+      <webElementGuid>d3ae489a-f7ce-44f2-8f13-a144b3fca8fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//img</value>
+      <webElementGuid>20d25314-0550-48d2-8393-2248dac783e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = 'https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.10.21/static/media/user-default.3ff115bb.png']</value>
+      <webElementGuid>3f40f81a-e6c0-4da2-8ff6-3bf14b0f238b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

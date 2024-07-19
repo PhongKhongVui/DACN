@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Hy nhp tt c thng tin  c th ng k_confirm</name>
+   <tag></tag>
+   <elementGuidId>c94e873e-2958-461e-b91b-faac6cae7303</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='confirm']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;confirm&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>cc08a751-6c53-4bca-b717-cb359dac0581</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600</value>
+      <webElementGuid>883064df-d287-4161-95e1-e0131e48784b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>confirm</value>
+      <webElementGuid>ca7f4217-83f5-488c-9604-ae1c05d98e7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Xác nhận mật khẩu</value>
+      <webElementGuid>6d8b94e9-4af0-47e1-bbc1-01b8b92c8658</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>password</value>
+      <webElementGuid>69cfea68-89d8-40da-bf08-addee606a9ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;modal&quot;]/div[1]/div[@class=&quot;auth-modal&quot;]/div[@class=&quot;rounded-l-2xl bg-[--layout-bg] p-10&quot;]/div[1]/form[1]/div[@class=&quot;mt-6 flex flex-col gap-5&quot;]/div[4]/input[@class=&quot;w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600&quot;]</value>
+      <webElementGuid>062e8580-b530-4ae8-896d-e7418b888d5b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@name='confirm']</value>
+      <webElementGuid>76d4e41e-2211-402b-af5c-f1bcbdb21c0c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hãy nhập tất cả thông tin để có thể đăng ký'])[1]/following::input[4]</value>
+      <webElementGuid>8504e6c1-ea58-4fcd-baa4-6eb2acc5961d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[1]/following::input[4]</value>
+      <webElementGuid>2a9be1cd-1c95-4253-b7a1-e3df19d15777</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[2]/preceding::input[1]</value>
+      <webElementGuid>dec2f703-86c2-4401-991b-c255d650c5f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ban đã có tài khoản?'])[1]/preceding::input[1]</value>
+      <webElementGuid>92010f7b-fd67-4341-992f-278089770c1a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/input</value>
+      <webElementGuid>391c7d1a-7d47-4e37-84a9-04507fc57bad</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@name = 'confirm' and @placeholder = 'Xác nhận mật khẩu' and @type = 'password']</value>
+      <webElementGuid>43e4e0f9-92bc-49ad-9703-084d54909d7e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Nhp email v mt khu ca bn  ng nhp_email</name>
+   <tag></tag>
+   <elementGuidId>0cd01c15-b385-4e07-83d9-c4801cdc4f1c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='email']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;email&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>dea36a79-12a0-4ef4-8877-0f8e0135ef02</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600</value>
+      <webElementGuid>29dada12-7703-4f70-b0c7-f97b80d241f1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>email</value>
+      <webElementGuid>2f5497a9-1f39-486c-bf5c-526e6d44ad4c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Email</value>
+      <webElementGuid>683e10ce-02a9-43a1-b373-a7e43a041d87</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;modal&quot;]/div[1]/div[@class=&quot;auth-modal&quot;]/div[@class=&quot;rounded-l-2xl bg-[--layout-bg] p-10&quot;]/div[1]/form[1]/div[@class=&quot;mt-6 flex flex-col gap-5&quot;]/div[1]/input[@class=&quot;w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600&quot;]</value>
+      <webElementGuid>f57832aa-b608-4b34-8acb-49c488387414</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@name='email']</value>
+      <webElementGuid>f94b75a1-c744-4589-952b-bb0250e6f372</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nhập email và mật khẩu của bạn để đăng nhập'])[1]/following::input[1]</value>
+      <webElementGuid>b46677fc-4d92-4dca-a845-03bfc22cffce</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng nhập'])[1]/following::input[1]</value>
+      <webElementGuid>66603a6a-0abe-4071-9cd4-a64a1e0312ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quên mật khẩu?'])[1]/preceding::input[2]</value>
+      <webElementGuid>3aba4316-ae4c-4fd7-a8fe-a0f6a79f706f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng nhập'])[2]/preceding::input[2]</value>
+      <webElementGuid>4df837bf-89c2-47bc-a829-8e25a9231434</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/div/div/div/form/div/div/input</value>
+      <webElementGuid>84ced240-7c6a-4140-ad2e-1538762e976f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@name = 'email' and @placeholder = 'Email']</value>
+      <webElementGuid>5e3704f0-3d77-4d55-ab5c-e7c33b445ca5</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

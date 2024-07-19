@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Hy nhp tt c thng tin  c th ng k_password</name>
+   <tag></tag>
+   <elementGuidId>cb7229ff-06a9-46a7-9599-7b673be62d95</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='password']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;password&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>948c25a3-474f-434e-aa5a-704acf2ebff0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600</value>
+      <webElementGuid>d937feb9-ad9b-45b3-a25c-6c7834355f12</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>password</value>
+      <webElementGuid>d335e6e3-6226-4fca-80cc-8d85c8abbb97</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Mật khẩu</value>
+      <webElementGuid>44f9932d-d788-4974-8428-7409ccba5ea9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>password</value>
+      <webElementGuid>38ad0213-d317-46cc-9108-026bb52445a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;modal&quot;]/div[1]/div[@class=&quot;auth-modal&quot;]/div[@class=&quot;rounded-l-2xl bg-[--layout-bg] p-10&quot;]/div[1]/form[1]/div[@class=&quot;mt-6 flex flex-col gap-5&quot;]/div[3]/input[@class=&quot;w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600&quot;]</value>
+      <webElementGuid>48c0c26e-581f-4e4e-a10a-89e8f366ee9f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@name='password']</value>
+      <webElementGuid>1d3f685a-c774-445f-8b20-4e81cd6e62cd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hãy nhập tất cả thông tin để có thể đăng ký'])[1]/following::input[3]</value>
+      <webElementGuid>525b7b59-3698-4a28-8b72-33cf9bd014b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[1]/following::input[3]</value>
+      <webElementGuid>12aba10d-bec0-4d81-9742-f4665b0e9ab6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[2]/preceding::input[2]</value>
+      <webElementGuid>8144c33c-5f8e-43f3-98c8-45fd767ebe8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ban đã có tài khoản?'])[1]/preceding::input[2]</value>
+      <webElementGuid>a31898a0-8c3e-4b29-a9c2-ee60a0a39d8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/input</value>
+      <webElementGuid>bd8db98a-5cf7-4dca-b542-a7cb4081c078</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@name = 'password' and @placeholder = 'Mật khẩu' and @type = 'password']</value>
+      <webElementGuid>47527f48-425e-4eff-8765-837dd98883c8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

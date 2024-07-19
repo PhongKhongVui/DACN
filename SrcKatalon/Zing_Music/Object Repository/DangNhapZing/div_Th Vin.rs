@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Th Vin</name>
+   <tag></tag>
+   <elementGuidId>b99b6c2c-697e-4f99-a29e-38bdec06abfd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/div/div[2]/a/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.sidebar-item</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>3d8390e4-767b-4dc2-944b-6e4dd0acdf5e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>sidebar-item</value>
+      <webElementGuid>fe5cb511-c247-4158-bc83-5822c25b6ba1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Thư Viện</value>
+      <webElementGuid>75d209a5-5f29-407e-82f1-a57742a58a99</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;h-screen&quot;]/div[@class=&quot;flex bg-[var(--layout-bg)] h-full&quot;]/div[@class=&quot;w-[240px] min-w-[240px]&quot;]/div[@class=&quot;sidebar h-full max-h-full w-full flex flex-col z-10 bg-[var(--sidebar-bg)]&quot;]/div[@class=&quot;flex flex-col mb-4&quot;]/a[1]/div[@class=&quot;sidebar-item&quot;]</value>
+      <webElementGuid>a8443252-0a81-4ea7-b218-293af40ed015</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div/div[2]/a/div</value>
+      <webElementGuid>00fa5326-8bd0-4b77-b2f6-12a261a89bd6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Khám Phá'])[1]/preceding::div[4]</value>
+      <webElementGuid>4ebec106-7463-4f37-8c7e-26d42d7ee8a2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a/div</value>
+      <webElementGuid>0cef05ee-6811-44ba-8768-5338bf385ce2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Thư Viện' or . = 'Thư Viện')]</value>
+      <webElementGuid>261e89b2-b474-4a6c-b729-5cce1f4df118</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

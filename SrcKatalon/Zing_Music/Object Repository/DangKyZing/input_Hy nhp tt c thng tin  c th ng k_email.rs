@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Hy nhp tt c thng tin  c th ng k_email</name>
+   <tag></tag>
+   <elementGuidId>0f65ad66-1863-440e-8d4f-0ed9488a1dbb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='email']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;email&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>8b9d6864-1652-48b2-b717-78a883594b84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600</value>
+      <webElementGuid>fd4bb40d-cafe-4353-a340-99c6f1139a80</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>email</value>
+      <webElementGuid>e2766cba-0878-45b1-8d13-68ddde67dcf5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>placeholder</name>
+      <type>Main</type>
+      <value>Email</value>
+      <webElementGuid>984984d2-9727-4cda-b9e4-133e8e8f59c6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/div[@class=&quot;modal&quot;]/div[1]/div[@class=&quot;auth-modal&quot;]/div[@class=&quot;rounded-l-2xl bg-[--layout-bg] p-10&quot;]/div[1]/form[1]/div[@class=&quot;mt-6 flex flex-col gap-5&quot;]/div[2]/input[@class=&quot;w-full bg-[--sidebar-bg] p-3 rounded-md outline-none border text-sm text-gray-400 border-transparent focus:border-slate-600&quot;]</value>
+      <webElementGuid>06d3a940-3122-48c3-acf3-34d1f94c719e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@name='email']</value>
+      <webElementGuid>3af118a7-9d6c-4d11-8687-b893ea2ae53b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hãy nhập tất cả thông tin để có thể đăng ký'])[1]/following::input[2]</value>
+      <webElementGuid>f4d00341-6986-4cc1-8f4a-4c0b32317a14</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[1]/following::input[2]</value>
+      <webElementGuid>8f8e76be-23db-4fa9-a3fd-8c1bb9aa19a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Đăng ký'])[2]/preceding::input[3]</value>
+      <webElementGuid>2047d1e5-6b6c-40dd-8dc0-15c64b87761b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Ban đã có tài khoản?'])[1]/preceding::input[3]</value>
+      <webElementGuid>13e4dcbb-42dc-4a29-af65-bf9f3a7843ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/input</value>
+      <webElementGuid>0e243190-9a9c-4abe-8a7f-d71a30e62506</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@name = 'email' and @placeholder = 'Email']</value>
+      <webElementGuid>2d849c5e-cb11-4f3c-b076-28e3ddfd8e5b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,52 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+SignUp,Firefox 126.0,,,23-05-2024 00:02:53,23-05-2024 00:07:45,4m - 52.346s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:02:53,23-05-2024 00:03:05,12.096s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:03:05,23-05-2024 00:03:17,11.208s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:03:17,23-05-2024 00:03:28,11.062s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:03:28,23-05-2024 00:03:38,9.987s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:03:38,23-05-2024 00:03:49,11.065s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:03:49,23-05-2024 00:03:59,9.901s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:03:59,23-05-2024 00:04:10,10.975s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:04:10,23-05-2024 00:04:20,10.319s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:04:20,23-05-2024 00:04:32,11.950s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:04:32,23-05-2024 00:04:47,14.535s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:04:47,23-05-2024 00:04:57,9.943s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:04:57,23-05-2024 00:05:10,13.068s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:05:10,23-05-2024 00:05:20,9.910s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:05:20,23-05-2024 00:05:32,11.854s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:05:32,23-05-2024 00:05:42,10.380s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:05:42,23-05-2024 00:05:56,14.030s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:05:56,23-05-2024 00:06:09,12.865s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:06:09,23-05-2024 00:06:22,12.772s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:06:22,23-05-2024 00:06:36,13.971s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:06:36,23-05-2024 00:06:49,13.227s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:06:50,23-05-2024 00:07:01,11.539s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:07:01,23-05-2024 00:07:11,10.360s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:07:12,23-05-2024 00:07:22,10.942s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:07:22,23-05-2024 00:07:34,11.349s,PASSED
+,,,,,,,
+Test Cases/DangKy,Firefox 126.0,,,23-05-2024 00:07:34,23-05-2024 00:07:44,9.793s,PASSED

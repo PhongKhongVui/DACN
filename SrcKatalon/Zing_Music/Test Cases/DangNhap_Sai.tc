@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>DangNhap_Sai</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1c48427e-e574-4e8e-9f23-4d280a3373ff</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4e7b7beb-5de2-46f9-be5c-02efd360ec4a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>09c4e69c-7b96-4cee-beb4-0ed5f85346d5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>519ba991-b6d2-4f0a-bc16-cf1595b0af54</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4e7b7beb-5de2-46f9-be5c-02efd360ec4a</id>
+      <masked>false</masked>
+      <name>TK</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>09c4e69c-7b96-4cee-beb4-0ed5f85346d5</id>
+      <masked>false</masked>
+      <name>MK</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>519ba991-b6d2-4f0a-bc16-cf1595b0af54</id>
+      <masked>false</masked>
+      <name>ThongBaoLoi</name>
+   </variable>
+</TestCaseEntity>

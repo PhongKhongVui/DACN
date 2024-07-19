@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>SignIn</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>9f224a28-8754-4834-9ea6-4601951cfc7d</testSuiteGuid>
+   <testCaseLink>
+      <guid>145b075d-9d09-4712-815d-084b0c56620c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DangNhap_Sai</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>5293ccf0-d678-49c8-a95b-69483f51e4cb</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/SignIn</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>5293ccf0-d678-49c8-a95b-69483f51e4cb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tk</value>
+         <variableId>4e7b7beb-5de2-46f9-be5c-02efd360ec4a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5293ccf0-d678-49c8-a95b-69483f51e4cb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>mk</value>
+         <variableId>09c4e69c-7b96-4cee-beb4-0ed5f85346d5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5293ccf0-d678-49c8-a95b-69483f51e4cb</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Thông báo lỗi</value>
+         <variableId>519ba991-b6d2-4f0a-bc16-cf1595b0af54</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3b2ee098-7ee9-4aa8-baa9-7811485078a7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/DangNhap_Dung</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b82be334-6606-4f02-8762-8d3ce3cd49ce</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/SignIn</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>b82be334-6606-4f02-8762-8d3ce3cd49ce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>tk</value>
+         <variableId>034bd181-4dfd-42d0-90a6-f3aaec09e59e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b82be334-6606-4f02-8762-8d3ce3cd49ce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>mk</value>
+         <variableId>734e4f31-45e8-45f0-88d8-098f0a9ebfb5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b82be334-6606-4f02-8762-8d3ce3cd49ce</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>5c1e0f75-e8cd-4a0b-b693-5151704d6e23</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
