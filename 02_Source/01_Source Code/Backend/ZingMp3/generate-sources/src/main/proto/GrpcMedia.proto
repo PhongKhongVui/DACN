@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+
+package hcmus.zingmp3;
+
+
+message MediaRequestGrpc {
+  string id = 1;
+}
+
+message MediaResponseGrpc {
+  string id = 1;
+  string url = 2;
+  int64 bitrate = 3;
+  double duration = 4;
+}
+
+service MediaService {
+  rpc getById(MediaRequestGrpc) returns (MediaResponseGrpc);
+}

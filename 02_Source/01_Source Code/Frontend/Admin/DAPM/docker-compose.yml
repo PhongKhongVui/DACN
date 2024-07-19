@@ -1,0 +1,9 @@
+services:
+  zing-fe:
+    container_name: zing-fe-admin
+    image: ngoxuanchien/zing-fe-admin:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"

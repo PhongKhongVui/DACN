@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  zing-fe:
+    container_name: zing-fe
+    image: ngoxuanchien/zing-fe:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - VITE_TEXT=https://api.example.com
+      - NODE_ENV=production
+    ports:
+      - "80:80"

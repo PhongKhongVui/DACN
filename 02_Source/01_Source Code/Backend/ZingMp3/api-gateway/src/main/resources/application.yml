@@ -1,0 +1,100 @@
+spring:
+  application:
+    name: api-gateway
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${KEYCLOAK_ISSUER-URI:http://localhost:8080/realms/zing-mp3}
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins:
+              - "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+      routes:
+        - id: user-service
+          uri: lb://user-service
+          predicates:
+            - Path=/api/users/**, /v3/api-docs/user-service/**, /api/distributors/**
+        - id: auth-service
+          uri: ${KEYCLOAK_OPENID-CONNECT:http://localhost:8080/realms/zing-mp3/protocol/openid-connect/}
+          predicates:
+            - Path=/api/auth/**, /v3/api-docs/auth-service/**
+          filters:
+            - RewritePath=/api/auth/?(?<segment>), /realms/zing-mp3/protocol/openid-connect/$\{segment}
+        - id: image-service
+          uri: lb://image-service
+          predicates:
+            - Path=/api/images/**, /v3/api-docs/image-service/**, /thumbnail/**
+        - id: artist-service
+          uri: lb://artist-core
+          predicates:
+            - Path=/api/artists/**, /v3/api-docs/artist-service/**
+        - id: song-service
+          uri: lb://song-core
+          predicates:
+            - Path=/api/songs/**, /v3/api-docs/song-service/**, /api/genres/**
+        - id: media-service
+          uri: lb://media-service
+          predicates:
+            - Path=/api/media/**, /v3/api-docs/media-service/**, /api/play/**, /api/audios/**
+        - id: playlist-service
+          uri: lb://playlist-core
+          predicates:
+              - Path=/api/playlists/**, /v3/api-docs/playlist-service/**, /api/albums/**
+        - id: notification-service
+          uri: lb://notification-core
+          predicates:
+            - Path=/api/notifications/**, /v3/api-docs/notification-service/**
+    discovery:
+      enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_SERVICE-URL:http://localhost:8761/eureka/}
+    fetch-registry: true
+    register-with-eureka: true
+  instance:
+    prefer-ip-address: true
+    lease-renewal-interval-in-seconds: 10
+    lease-expiration-duration-in-seconds: 20
+#    ip-address: ${HOST_IP:localhost}
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        cloud.gateway: info
+        http.server.reactive: info
+        web.reactive: info
+#    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: info
+#    org.springframework.cloud.gateway: info
+server:
+  port: ${SERVER_PORT:8081}
+springdoc:
+  swagger-ui:
+    enabled: true
+    oauth:
+      client-id: music-service
+      client-secret: VkkYcgHZEnyEbKNBr0Ca1uit4i1iORz7
+    operations-sorter: method
+    tags-sorter: alpha
+#    urls:
+#      - name: auth-service
+#        url: /v3/api-docs/auth-service
+#      - name: song-service
+#        url: /v3/api-docs/song-service
+#      - name: user-service
+#        url: /v3/api-docs/user-service
+#      - name: playlist-service
+#        url: /v3/api-docs/playlist-service
+

@@ -1,0 +1,350 @@
+networks:
+  zingmp3-net:
+    name: zingmp3-net
+
+services:
+  api-gateway:
+    container_name: api-gateway
+    image: ngoxuanchien/api-gateway:latest
+    restart: always
+    ports:
+      - "8081:8081"
+    networks:
+      zingmp3-net:
+    environment:
+      SERVER_PORT: 8081
+      SERVER_HOST: nxc-hcmus.me:8081
+      EUREKA_SERVICE-URL: http://discovery-service:8761/eureka/
+      KEYCLOAK_ISSUER-URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+      KEYCLOAK_OPENID-CONNECT: http://nxc-hcmus.me:8080/realms/zing-mp3/protocol/openid-connect/
+
+      HOST_IP: 192.168.1.17
+  user-service:
+    container_name: user-service
+    image: ngoxuanchien/user-service:latest
+    restart: always
+#    depends_on:
+#      mysql-user:
+#        condition: service_healthy
+#    ports:
+#      - "8006:8006"
+#      - "9006:9006"
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-user
+      SPRING_DATASOURCE_PORT: 3340
+      SPRING_DATASOURCE_NAME: user_service
+
+#      SERVER_PORT: 8006
+#      SERVER_GRPC_PORT: 9006
+
+      KEYCLOAK_ISSUER_URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+      KEYCLOAK_URLS_AUTH: http://nxc-hcmus.me:8080
+
+#      HOST_IP: 192.168.1.17
+      EUREKA_SERVER: discovery-service
+      EUREKA_PORT: 8761
+
+      KEYCLOAK_TOKEN: http://nxc-hcmus.me:8081/api/auth/token
+    networks:
+      zingmp3-net:
+
+  discovery-service:
+    container_name: discovery-service
+    image: ngoxuanchien/discovery-service:latest
+    restart: always
+    ports:
+      - "8761:8761"
+    networks:
+      zingmp3-net:
+#    environment:
+#      HOST_IP: 192.168.1.17
+
+  image-service:
+    container_name: image-service
+#    depends_on:
+#      mysql-image:
+#        condition: service_healthy
+    image: ngoxuanchien/image-service
+    restart: always
+    networks:
+      zingmp3-net:
+    volumes:
+      - ./data/images:/data/images
+#    ports:
+#      - "8001:8001"
+#      - "9001:9001"
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-image
+      SPRING_DATASOURCE_PORT: 3333
+      SPRING_DATASOURCE_NAME: image_service
+#      SERVER_PORT: 8001
+
+#      GRPC_SERVER_PORT: 9001
+
+      EUREKA_SERVER: discovery-service
+      EUREKA_PORT: 8761
+#      HOST_IP: 192.168.1.17
+
+      KEYCLOAK_CLIENT_ID: image-service
+      KEYCLOAK_CLIENT_SECRET: uCDk3L2k7SHMxU0oNHW0igg63hqm2U3h
+      KEYCLOAK_TOKEN_URL: http://nxc-hcmus.me:8081/api/auth/token
+      KEYCLOAK_ISSUER_URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+      IMAGE_URL: http://nxc-hcmus.me:8081/thumbnail/
+
+  media-service:
+    container_name: media-service
+#    depends_on:
+#      mysql-media:
+#        condition: service_healthy
+    image: ngoxuanchien/media-service
+    networks:
+      zingmp3-net:
+    restart: always
+#    ports:
+#      - "8002:8002"
+#      - "9002:9002"
+    volumes:
+      - ./data/audio:/data/audio
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-media
+      SPRING_DATASOURCE_PORT: 3334
+      SPRING_DATASOURCE_NAME: media_service
+
+#      SERVER_PORT: 8002
+
+#      GRPC_SERVER_PORT: 9002
+
+      EUREKA_SERVER: discovery-service
+      EUREKA_PORT: 8761
+#      HOST_IP: 192.168.1.17
+
+      KEYCLOAK_CLIENT_ID: media-service
+      KEYCLOAK_CLIENT_SECRET: ouXTTP8vbbfjY6WxUFxmhnkFi9OJBzkE
+      KEYCLOAK_ISSUER_URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+      KEYCLOAK_TOKEN: http://nxc-hcmus.me:8081/api/auth/token
+      MEDIA_URL: http://nxc-hcmus.me:8081
+
+  artist-core:
+    container_name: artist-core
+    image: ngoxuanchien/artist-core
+#    depends_on:
+#      mysql-artist:
+#        condition: service_healthy
+    restart: always
+#    ports:
+#      - "8003:8003"
+#      - "9003:9003"
+    networks:
+      zingmp3-net:
+    healthcheck:
+      test: "curl --fail --silent localhost:8003/actuator/health | grep UP || exit 1"
+      interval: 20s
+      timeout: 5s
+      retries: 5
+      start_period: 40s
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-artist
+      SPRING_DATASOURCE_PORT: 3336
+      SPRING_DATASOURCE_NAME: artist_service
+#      SERVER_PORT: 8003
+
+#      GRPC_SERVER_PORT: 9003
+
+      KEYCLOAK_PORT: 8080
+      KEYCLOAK_SERVER: localhost
+      KEYCLOAK_CLIENT_ID: music-service
+      KEYCLOAK_CLIENT_SECRET: VkkYcgHZEnyEbKNBr0Ca1uit4i1iORz7
+      KEYCLOAK_TOKEN_URL: http://nxc-hcmus.me:8081/api/auth/token
+      KEYCLOAK_ISSUER_URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+
+      EUREKA_PORT: 8761
+      EUREKA_SERVER: discovery-service
+
+      GATEWAY_URL: http://nxc-hcmus.me:8081
+
+      BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092,PLAINTEXT://kafka2:19093,PLAINTEXT://kafka3:19094'
+
+#      HOST_IP: 192.168.1.17
+  artist-event-handler:
+    container_name: artist-event-handler
+    image: ngoxuanchien/artist-event-handler
+#    depends_on:
+#      artist-core:
+#        condition: service_healthy
+    networks:
+      zingmp3-net:
+#    ports:
+#      - "8004:8004"
+    restart: always
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-artist
+      SPRING_DATASOURCE_PORT: 3336
+      SPRING_DATASOURCE_NAME: artist_service
+
+      BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092,PLAINTEXT://kafka2:19093,PLAINTEXT://kafka3:19094'
+
+#      HOST_IP: 192.168.1.17
+#      SERVER_PORT: 8004
+
+      EUREKA_PORT: 8761
+      EUREKA_SERVER: discovery-service
+
+      ARTIST_URL: http://nxc-hcmus.me:8081/api/artists
+  song-core:
+    container_name: song-core
+    image: ngoxuanchien/song-core
+#    depends_on:
+#      mysql-song:
+#        condition: service_healthy
+    restart: always
+#    ports:
+#      - "8005:8005"
+#      - "9005:9005"
+    networks:
+      zingmp3-net:
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-song
+      SPRING_DATASOURCE_PORT: 3337
+      SPRING_DATASOURCE_NAME: song_service
+#      SERVER_PORT: 8005
+
+#      GRPC_SERVER_PORT: 9005
+
+      KEYCLOAK_PORT: 8080
+      KEYCLOAK_SERVER: localhost
+      KEYCLOAK_CLIENT_ID: music-service
+      KEYCLOAK_CLIENT_SECRET: VkkYcgHZEnyEbKNBr0Ca1uit4i1iORz7
+      KEYCLOAK_TOKEN_URL: http://nxc-hcmus.me:8081/api/auth/token
+      KEYCLOAK_ISSUER_URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+
+      EUREKA_PORT: 8761
+      EUREKA_SERVER: discovery-service
+
+      GATEWAY_URL: http://nxc-hcmus.me:8081
+
+      BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092,PLAINTEXT://kafka2:19093,PLAINTEXT://kafka3:19094'
+#      HOST_IP: 192.168.1.17
+  song-event-handler:
+    container_name: song-event-handler
+    image: ngoxuanchien/song-event-handler
+#    depends_on:
+#      mysql-song:
+#        condition: service_healthy
+    networks:
+      zingmp3-net:
+    restart: always
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-song
+      SPRING_DATASOURCE_PORT: 3337
+      SPRING_DATASOURCE_NAME: song_service
+
+      BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092,PLAINTEXT://kafka2:19093,PLAINTEXT://kafka3:19094'
+#      HOST_IP: 192.168.1.17
+
+      EUREKA_PORT: 8761
+      EUREKA_SERVER: discovery-service
+
+      SONG_URL: http://nxc-hcmus.me:8081/api/songs
+  playlist-core:
+    container_name: playlist-core
+    image: ngoxuanchien/playlist-core
+#    depends_on:
+#      mysql-playlist:
+#        condition: service_healthy
+    restart: always
+#    ports:
+#      - "8004:8004"
+#      - "9004:9004"
+    networks:
+      zingmp3-net:
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-playlist
+      SPRING_DATASOURCE_PORT: 3338
+      SPRING_DATASOURCE_NAME: playlist_service
+#      SERVER_PORT: 8004
+#      GRPC_SERVER_PORT: 9004
+
+      KEYCLOAK_CLIENT_ID: playlist-service
+      KEYCLOAK_CLIENT_SECRET: Vr36bQp3aKjesLCN8XiJZUFY6VqZ0on4
+      KEYCLOAK_ISSUER_URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+
+      EUREKA_PORT: 8761
+      EUREKA_SERVER: discovery-service
+
+      BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092,PLAINTEXT://kafka2:19093,PLAINTEXT://kafka3:19094'
+      KAFKA_TOPIC: playlist-service
+      KEYCLOAK_TOKEN: http://nxc-hcmus.me:8081/api/auth/token
+#      HOST_IP: 192.168.1.17
+
+  playlist-event-handler:
+    container_name: playlist-event-handler
+    image: ngoxuanchien/playlist-event-handler
+#    depends_on:
+#      mysql-playlist:
+#        condition: service_healthy
+    networks:
+      zingmp3-net:
+    restart: always
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-playlist
+      SPRING_DATASOURCE_PORT: 3338
+      SPRING_DATASOURCE_NAME: playlist_service
+
+      EUREKA_PORT: 8761
+      EUREKA_SERVER: 192.168.1.17
+
+      BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092,PLAINTEXT://kafka2:19093,PLAINTEXT://kafka3:19094'
+      KAFKA_TOPIC: playlist-service
+
+      ALBUM_URL: http://nxc-hcmus.me:8081/api/albums
+  notification-core:
+    container_name: notification-core
+    image: ngoxuanchien/notification-core
+#    depends_on:
+#      mysql-notification:
+#        condition: service_healthy
+    restart: always
+    networks:
+      zingmp3-net:
+#    ports:
+#      - "8007:8007"
+    environment:
+      SPRING_DATASOURCE_USERNAME: zingmp3
+      SPRING_DATASOURCE_PASSWORD: zingmp3
+      SPRING_DATASOURCE_SERVER: mysql-notification
+      SPRING_DATASOURCE_PORT: 3339
+      SPRING_DATASOURCE_NAME: notification_service
+
+      MAIL_USERNAME: ${MAIL_USERNAME}
+      MAIL_PASSWORD: ${MAIL_PASSWORD}
+
+#      SERVER_PORT: 8007
+#      SERVER_HOST: 192.168.1.17
+
+      BOOTSTRAP_SERVERS: 'PLAINTEXT://kafka1:19092,PLAINTEXT://kafka2:19093,PLAINTEXT://kafka3:19094'
+      EUREKA_PORT: 8761
+      EUREKA_SERVER: discovery-service
+
+      KEYCLOAK_CLIENT_ID: notification-service
+      KEYCLOAK_CLIENT_SECRET: EVGa0NmiSUWeOnF85CLqIbaJVWvNlZjv
+      KEYCLOAK_ISSUER_URI: http://nxc-hcmus.me:8080/realms/zing-mp3
+      KEYCLOAK_TOKEN: http://nxc-hcmus.me:8081/api/auth/token
+

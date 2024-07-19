@@ -1,0 +1,44 @@
+[
+  {
+    "namespace": "hcmus.zingmp3.award",
+    "type": "record",
+    "name": "AwardAvro",
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "name": "artists",
+        "type": [
+          {
+            "type": "array",
+            "items": "string"
+          },
+          "null"
+        ],
+        "default": []
+      }
+    ]
+  },
+  {
+    "namespace": "hcmus.zingmp3.award",
+    "type": "record",
+    "name": "AwardEvent",
+    "fields": [
+      {
+        "name": "eventType",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "award",
+        "type": "hcmus.zingmp3.award.AwardAvro"
+      }
+    ]
+  }
+]

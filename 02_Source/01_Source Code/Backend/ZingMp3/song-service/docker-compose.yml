@@ -1,0 +1,23 @@
+services:
+  mysql-song:
+    container_name: mysql-song
+    image: mysql
+    environment:
+      MYSQL_HOST: '%'
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: song_service
+      MYSQL_USER: zingmp3
+      MYSQL_PASSWORD: zingmp3
+      MYSQL_TCP_PORT: 3337
+    volumes:
+      - ./database/song_service:/data/mysql
+    ports:
+      - "3337:3337"
+    restart: always
+    healthcheck:
+      test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
+    networks:
+      zingmp3-net:
+networks:
+  zingmp3-net:
+    name: zingmp3-net

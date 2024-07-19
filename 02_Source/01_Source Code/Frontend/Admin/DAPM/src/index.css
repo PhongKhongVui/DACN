@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --indigo-primary: #132649;
+  --sidebar-bg: #132649;
+  --sidebar-item-color: #96a7c7;
+  --sidebar-item-active-color: #fff;
+  --sidebar-thumb-color: #737991c2;
+  --border-primary: #e9ebec;
+  --layout-bg: #f7f7f9;
+  --primary-bg: white;
+  --text-primary: #495057;
+  --text-secondary: #878a99;
+  --header-shadow: 0 1px 2px rgba(56, 65, 74, .15);
+  --box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+  --alpha-bg: hsla(0, 0%, 100%, 0.1);
+  --btn-hover-bg: hsla(198, 18%, 74%, 0.2);
+  --primary: #695eef;
+  --header-bg: #fff;
+  --header-border: #e9ebec;
+  --header-item-color: #495057;
+  --header-item-bg: rgba(85, 150, 247, 0.12);
+  --header-item-sub-color: #878a99;
+  --topbar-search-bg: #f3f3f9;
+  --topbar-user-bg: #f3f3f9;
+  --topbar-search-color: #262a2f;
+  --page-title-box-shadow: 0 1px 2px rgba(56, 65, 74, 0.15);
+  --footer-bg: #fff;
+  --footer-color: #98a6ad;
+  --boxed-body-bg: #ebebf0;
+  --timeline-color: var(--secondary-bg);
+  --chat-primary-bg: var(--light);
+  --chat-secondary-bg: rgba(var(--success-rgb), 0.15);
+  --chat-secondary-color: var(--success);
+  --primary: #695eef;
+  --primary-bg-subtle: rgba(105, 94, 239, 0.15);
+  --primary-border-subtle: rgba(105, 94, 239, 0.3);
+  --primary-text-emphasis: #4f47b3;
+  --secondary: #5596f7;
+  --secondary-bg-subtle: rgba(85, 150, 247, 0.15);
+  --secondary-border-subtle: rgba(85, 150, 247, 0.3);
+  --secondary-text-emphasis: #4071b9;
+  --danger: #ff7f41;
+  --danger-bg-subtle: rgba(255, 127, 65, 0.15);
+  --danger-border-subtle: rgba(255, 127, 65, 0.3);
+  --danger-text-emphasis: #bf5f31;
+  --warning: #ffc061;
+  --warning-bg-subtle: rgba(255, 192, 97, 0.15);
+  --warning-border-subtle: rgba(255, 192, 97, 0.3);
+  --warning-text-emphasis: #bf9049;
+  --info: #73dce9;
+  --info-bg-subtle: rgba(115, 220, 233, 0.15);
+  --info-border-subtle: rgba(115, 220, 233, 0.3);
+  --info-text-emphasis: #56a5af;
+  --success: #11d1b7;
+  --success-bg-subtle: rgba(17, 209, 183, 0.15);
+  --success-border-subtle: rgba(17, 209, 183, 0.3);
+  --success-text-emphasis: #0d9d89;
+  --dark: #343a40;
+  --dark-bg-subtle: rgba(52, 58, 64, 0.15);
+  --dark-border-subtle: rgba(52, 58, 64, 0.3);
+  --dark-text-emphasis: #272c30;
+  --light: #f1f4f7;
+  --light-bg-subtle: rgba(241, 244, 247, 0.15);
+  --light-border-subtle: rgba(241, 244, 247, 0.3);
+  --light-text-emphasis: #b5b7b9;
+  --link-color: #695eef;
+  --link-hover-color: #544bbf;
+  --secondary-bg: white;
+  --heading-color: #495057;
+  --body-color: #212529;
+}
+
+* {
+  /* font-family: "Outfit", sans-serif; */
+  font-family: "Inter", sans-serif;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+.tippy-box[data-theme~=root] .tippy-content {
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 5px 9px;
+}
+
+.Toastify__toast-body {
+  font-size: 14px;
+}

@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  api-gateway:
+    container_name: api-gateway
+#    depends_on:
+#      mysql-keycloak:
+#        condition: service_healthy
+    image: ngoxuanchien/api-gateway:latest
+    restart: always
+    ports:
+      - "8081:8081"
+    networks:
+      - zingmp3-net
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+
+networks:
+  zingmp3-net:
+    name: zingmp3-net

@@ -1,0 +1,66 @@
+.sidebar-item {
+    .main {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 15px;
+        color: var(--sidebar-item-color);
+        user-select: none;
+        cursor: pointer;
+        padding: 0 16px 0 24px;
+        height: 50px;
+        transition: color 0.2s ease-in-out;
+    }
+
+    &:has(:hover) .main,
+    .main.active {
+        color: var(--sidebar-item-active-color);
+    }
+
+    .main.active {
+        background-color: var(--alpha-bg);
+    }
+
+    &:has(:hover) .main::before,
+    .main.active::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 5px;
+        background-color: var(--sidebar-thumb-color);
+        border-radius: 0 2px 2px 0;
+        top: 0;
+        left: 0;
+    }
+
+    .sub-items {
+        overflow: hidden;
+        transition: height 0.2s ease-in-out;
+    }
+
+    .sub-items .item {
+        display: flex;
+        align-items: center;
+        padding: 0 16px 0 24px;
+        height: 36px;
+        font-size: 14px;
+        color: var(--sidebar-item-color);
+        transition: color 0.1s ease-in-out;
+    }
+
+    .sub-items .item .active,
+    .sub-items .item:hover {
+        color: var(--sidebar-item-active-color);
+    }
+
+    .arrow {
+        width: 18px;
+        height: 18px;
+        transition: transform 0.2s linear;
+    }
+
+    &.expanded .arrow {
+        transform: rotate(90deg);
+    }
+}
